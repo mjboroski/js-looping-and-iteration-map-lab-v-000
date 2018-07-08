@@ -6,12 +6,15 @@ function lowerCaseDrivers (list) {
 
 function nameToAttributes (list) {
   return list.map(function (driver) {
-    return driver.toLowerCase();
+    const driverFirst = driver.split(' ')[0];
+    const driverLast = driver.split(' ')[1];
+
+    return { firstName: driverFirst, lastName: driverLast };
   });
 }
 
-function attributesToPhrase (list) {
-  return list.map(function (driver) {
-    return driver.toLowerCase();
+function attributesToPhrase(drivers) {
+  return drivers.map(function (driver) {
+    return `${driver.name} is from ${driver.hometown}`;
   });
 }
