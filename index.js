@@ -4,13 +4,13 @@ function lowerCaseDrivers (list) {
   });
 }
 
-function lowerCaseDrivers (list) {
+function nameToAttributes (list) {
   return list.map(function (driver) {
     return driver.toLowerCase();
   });
 }
 
-function lowerCaseDrivers (list) {
+function attributesToPhrase (list) {
   return list.map(function (driver) {
     return driver.toLowerCase();
   });
